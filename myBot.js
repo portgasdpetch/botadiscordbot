@@ -1,7 +1,13 @@
 const Discord = require('discord.js');
 const botBota = new Discord.Client();
 
+<<<<<<< HEAD
 require('events').EventEmitter.defaultMaxListeners = 10;
+=======
+botBota.on('ready', () => {
+	console.log('Bota is ready!');
+});
+>>>>>>> 90cfe2941642981a22c09085fe13ea12684c6584
 
 botBota.on('ready', () => {console.log('Bota is ready!'); });
 
@@ -43,6 +49,7 @@ botBota.on('message', message => {
 	}
 });
 
+<<<<<<< HEAD
 
 botBota.login('MzQyNzU2NTE5ODIzMTQ3MDA5.DGXTTQ.zIIiEWeVJyV-PRPxJyKSNJ77Cdo');
 
@@ -71,3 +78,26 @@ botBota.login('MzQyNzU2NTE5ODIzMTQ3MDA5.DGXTTQ.zIIiEWeVJyV-PRPxJyKSNJ77Cdo');
 		message.reply('Name : กฤติพงศ์ เหมวิริยะ\nSteam Link : http://steamcommunity.com/profiles/76561198074048720/');
 	}
 });*/
+=======
+botBota.on('message', message => {
+	if(message.content === '!boat'){
+		message.reply('Name : ปณิธิ หวังเพื่อสุข\nSteam link : http://steamcommunity.com/id/boatkuyza/');
+	}	
+});
+
+botBota.login('เMzQyNzU2NTE5ODIzMTQ3MDA5.DG830Q.fbXJ7Aj5KWlmauwUw42bevdpRdM');
+
+/*const Discord = require('discord.js'); //เรียก discord.js มาใช้
+const botRem = new Discord.Client(); //ประกาศ client ขึ้นมา
+//event นี้ทำงานเมื่อ login สำเร็จ
+botRem.on('ready', () => {
+  console.log('Rem ready!');
+});
+//รอรับ event message เวลามีข้อความโผล่มาในแชท function นี้ก็จะทำงาน
+botRem.on('message', message => { 
+  if (message.content === '!test') {
+    message.reply('ถึงยังไงเรมก็รักสุบารุค่ะ');
+  }
+});
+botRem.login('MzQyNzU2NTE5ODIzMTQ3MDA5.DG830Q.fbXJ7Aj5KWlmauwUw42bevdpRdM');*/
+>>>>>>> 90cfe2941642981a22c09085fe13ea12684c6584
