@@ -1,7 +1,9 @@
 const Discord = require('discord.js');
 const botBota = new Discord.Client();
 
-botBota.on('ready', () => {console.log('Bota is ready!'); });
+botBota.on('ready', () => {
+	console.log('Bota is ready!');
+});
 
 botBota.on('message', message => {
 	if(message.content === '!bothelp'){
@@ -34,9 +36,23 @@ botBota.on('message', message => {
 });
 
 botBota.on('message', message => {
-	if(message.contect == '!boat'){
+	if(message.content === '!boat'){
 		message.reply('Name : ปณิธิ หวังเพื่อสุข\nSteam link : http://steamcommunity.com/id/boatkuyza/');
-	}
+	}	
 });
 
-botBota.login('MzQyNzU2NTE5ODIzMTQ3MDA5.DGXTTQ.zIIiEWeVJyV-PRPxJyKSNJ77Cdo');
+botBota.login('เMzQyNzU2NTE5ODIzMTQ3MDA5.DG830Q.fbXJ7Aj5KWlmauwUw42bevdpRdM');
+
+/*const Discord = require('discord.js'); //เรียก discord.js มาใช้
+const botRem = new Discord.Client(); //ประกาศ client ขึ้นมา
+//event นี้ทำงานเมื่อ login สำเร็จ
+botRem.on('ready', () => {
+  console.log('Rem ready!');
+});
+//รอรับ event message เวลามีข้อความโผล่มาในแชท function นี้ก็จะทำงาน
+botRem.on('message', message => { 
+  if (message.content === '!test') {
+    message.reply('ถึงยังไงเรมก็รักสุบารุค่ะ');
+  }
+});
+botRem.login('MzQyNzU2NTE5ODIzMTQ3MDA5.DG830Q.fbXJ7Aj5KWlmauwUw42bevdpRdM');*/
