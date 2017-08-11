@@ -33,4 +33,10 @@ botBota.on('message', message => {
 	}
 });
 
+botBota.on('message', message => {
+	if(message.contect == '!boat'){
+		message.reply('Name : ปณิธิ หวังเพื่อสุข\nSteam link : http://steamcommunity.com/id/boatkuyza/');
+	}
+});
+
 botBota.login('MzQyNzU2NTE5ODIzMTQ3MDA5.DGXTTQ.zIIiEWeVJyV-PRPxJyKSNJ77Cdo');
