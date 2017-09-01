@@ -38,7 +38,7 @@ botBota.on('message', message => {
 		case "!nilinfor" :
 		message.reply('Name : ธนิศร์ จงบรรเจิดเพชร\nSteam Link : http://steamcommunity.com/id/nilzakarb/')
 		break;
-		case "gonginfor" :
+		case "!gonginfor" :
 		message.reply('Name : กฤติพงศ์ เหมวิริยะ\nSteam Link : http://steamcommunity.com/profiles/76561198074048720/')
 		break;
 	}
