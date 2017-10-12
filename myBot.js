@@ -8,10 +8,10 @@ botBota.on('ready', () => {
 
 botBota.on('message', message => {
 	switch (message.content){
-		case "!bothelp" : 
-		message.channel.send("!travel >> Maple traveling tutorial.\r!farmspot >> farming spot for specified level.\r!playguide >> stats / skills upping\r!maplegroup >> The group of maple community\r!freepetquest >> Guide of the quest that give you a free pet.\n!infor >> to descripe about players' information");
+		case "!help" : 
+		message.channel.send("!travel >> Maple traveling tutorial.\r!farmspot >> farming spot for specified level.\r!buildguide >> stats / skills building\r!maplegroup >> The group of maple community\r!freepetquest >> Guide of the quest that give you a free pet.\n!infor >> to descripe about players' information");
 		break;
-		case "!playguide" :
+		case "!buildguide" :
 		message.reply('http://ayumilove.net/maplestory/');
 		break;
 		case "!travel" : 
