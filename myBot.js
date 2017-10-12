@@ -9,12 +9,15 @@ botBota.on('ready', () => {
 botBota.on('message', message => {
 	switch (message.content){
 		case "!bothelp" : 
-		message.channel.send("!travel >> Maple traveling tutorial.\r!trainguide >> farming spot for specified level.\r!maplegroup >> The group of maple community\r!freepetquest >> Guide of the quest that give you a free pet.\n!infor >> to descripe about players' information");
+		message.channel.send("!travel >> Maple traveling tutorial.\r!farmspot >> farming spot for specified level.\r!playguide >> stats / skills upping\r!maplegroup >> The group of maple community\r!freepetquest >> Guide of the quest that give you a free pet.\n!infor >> to descripe about players' information");
+		break;
+		case "!playguide" :
+		message.reply('http://ayumilove.net/maplestory/');
 		break;
 		case "!travel" : 
 		message.reply('Go to Dimensional Portal > Ziganpu > Talk to the big duck > Six path cross way \n> Climb down 1 map > Get to the top left and go to Pantheon Portal \n> get in Pantheon Portal again and choose the destination town \n>done.');
 		break;
-		case "trainguide" :
+		case "!farmspot" :
 		message.reply('http://ayumilove.net/best-maplestory-training-spots-guide-v9/');
 		break;
 		case "!maplegroup" :
